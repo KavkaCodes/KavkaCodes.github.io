@@ -13,6 +13,7 @@ header{
     vertical-align: middle;
     z-index: 2;
     cursor: pointer;
+    color: #006faa;
 }
 
 .nav{
@@ -21,25 +22,27 @@ header{
     position: fixed;
     right: -200px;
     top:0;
-    background-color: aqua;
+    background-color: #006faa;
     z-index: 2;
     transition: 0.5s;
 }
 .nav ul{
     display: block;
-    padding-left: 0;
-    padding-right: 100px;
+    width: 100%;
+    text-align: center;
 }
 .nav ul li{
-    display: list-item;
+    display: block;
     margin: 50px 0;
     cursor: pointer;
+}
+.nav ul li a{ 
+    color: white;
 }
 
 .feature{
     float: none;
     width: 100%;
-    border-bottom: solid 0.5px;
 }
 .feature:last-child{
     border-bottom: none;
@@ -55,4 +58,19 @@ header{
 	color: white;
 	text-align: center;
 	vertical-align: bottom;
+}
+.content{
+    text-align: center;
+}
+.modules{
+    display: block;
+    justify-content: none;
+}
+
+.flex{
+    display: block;
+}
+
+.feature{
+    margin-top: 20px;
 }

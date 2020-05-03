@@ -5,8 +5,10 @@ nav.style.right = '-200px';
 nav_icon.addEventListener('click', function () {
     if(nav.style.right === '-200px'){
         nav.style.right = '0';
+        nav_icon.style.color = "White";
     }
     else{
         nav.style.right = '-200px';
+        nav_icon.style.color = "#006faa"
     }
 })
