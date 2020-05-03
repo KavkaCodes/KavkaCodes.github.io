@@ -1,0 +1,180 @@
+*{
+	text-decoration: none;
+	list-style: none;
+	font-family: 'PT Sans Caption', sans-serif;
+	color: #707072;
+}
+h1, h2{
+	color: #1a1a1a;
+	margin: 0;
+}
+li{
+	line-height: 22px;
+	margin: 5px 0;
+}
+
+body {
+	background-position: center;
+	background-attachment: fixed;
+	-webkit-background-size: cover; /* the next 3 lines are "browser prefixes", they are necessary to include for CSS3 techniques */
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.container{
+	background-color: rgb(246, 247, 249);
+}
+/* HEADER */
+	header{
+		height: 58px;
+		display: flex;
+		background-color: white;
+		position: sticky;
+		top: 0;
+		box-shadow: 0 5px 8px rgba(128, 128, 128, 0.486) ;
+	}
+
+	/* LOGO */
+
+
+	/* LOGO */
+
+
+	/* Company name */
+		.company_name{
+			float: left;
+			margin-right: auto;	
+		}
+		.company_name h1,p{
+			padding: 0;
+			margin: 0;
+		}
+	/* Company name */
+
+
+	/* NavBar */
+	.nav_bar{
+		display: none;
+	}
+		.nav ul{
+			display: table;
+			padding: 0;
+			margin: 0;
+			height: 100%;
+			float: right;
+		}
+		.nav ul li{
+			display: table-cell;
+			padding: 0 20px;
+			vertical-align: middle;
+		}
+		.nav ul li a{
+			color: #1a1a1a;
+		}
+	/* NavBar */
+
+
+/* HEADER */
+.template{
+	/* background: white; */
+	width: 90%;
+	background-color: white;
+	padding: 20px;
+	margin: 50px auto 50px auto;
+	border: solid 0.5px rgba(165, 163, 163, 0.322);
+	border-radius: 3px;
+}
+
+.banner_home{
+	background-image: url(../images/hotel_lobby.jpg);
+	width: 100%;
+	padding: 220px 0px;
+	margin-top: 0;
+	color: white;
+	text-align: center;
+	vertical-align: bottom;
+}
+.banner_home h1{
+	display: inline;
+	margin: 0 auto;
+	font-size: 25px;
+	color: white;
+}
+.content{
+	font-size: 20px;
+	margin: 20px 0;
+}
+span{
+	font-weight: bolder;
+}
+.flex{
+	display: flex;
+	justify-content: space-around;
+	/* padding: 0; */
+}
+.feature{
+	width: 25%;
+}
+.feature h2{
+	padding: 10px;
+}
+.clear{
+	clear: both;
+}
+
+.info{
+	display: flex;
+	justify-content: space-between;
+	padding: 40px;
+}
+.address p, li{
+	font-size: 20px ;
+}
+
+.align{
+	text-align: center;
+}
+
+.banner_contact{
+	background-image: url("../images/contact.jpeg");
+	width: 100%;
+	padding: 220px 0px;
+	margin-top: 0;
+	color: white;
+	text-align: center;
+	background-size: cover;
+}
+
+.banner_contact h1{
+	top: 10px;
+	display: inline;
+	margin: 0 auto;
+	font-size: 25px;
+	color: white;
+}
+
+.highlight{
+	color: #006faa;
+}
+
+.modules{
+	display: flex;
+	justify-content: space-around;
+}
+
+.module{
+	color: #1a1a1a;
+}
+
+.address{
+	width: 50%;
+}
+
+.link{
+	color: #1a1a1a;
+}
+
+.contact{
+	font-size: 22px;
+	background-color: #006faa;
+}
