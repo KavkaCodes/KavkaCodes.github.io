@@ -66,6 +66,12 @@ header{
     display: block;
     justify-content: none;
 }
+.size{
+    font-size: 18px;
+}
+.module li{
+    font-size: 16px;
+}
 
 .flex{
     display: block;
