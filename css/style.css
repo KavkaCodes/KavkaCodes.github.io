@@ -165,9 +165,9 @@ span{
 .module{
 	color: #1a1a1a;
 }
-
-.address{
-	width: 50%;
+.info{
+	display: flex;
+	justify-content: space-around;
 }
 
 .link{
