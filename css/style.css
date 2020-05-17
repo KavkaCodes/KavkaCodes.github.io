@@ -1,182 +1,80 @@
-*{
-	text-decoration: none;
-	list-style: none;
-	font-family: 'PT Sans Caption', sans-serif;
-	color: #707072;
+body{
+    background-color: #fffc31;
+    color: black;
+   
+    /* font-size: 100px;  */
 }
-h1, h2{
-	color: #1a1a1a;
-	margin: 0;
-}
-li{
-	line-height: 22px;
-	margin: 5px 0;
-}
-
-body {
-	background-position: center;
-	background-attachment: fixed;
-	-webkit-background-size: cover; /* the next 3 lines are "browser prefixes", they are necessary to include for CSS3 techniques */
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+h1{
+      font-family: 'Bangers', cursive; 
+      font-size: 100px;
 }
 .container{
-	background-color: rgb(246, 247, 249);
+    margin: 0 auto;
+    margin-left: 75px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
-/* HEADER */
-	header{
-		height: 58px;
-		display: flex;
-		background-color: white;
-		position: sticky;
-		top: 0;
-		box-shadow: 0 5px 8px rgba(128, 128, 128, 0.486) ;
-	}
-
-	/* LOGO */
-
-
-	/* LOGO */
-
-
-	/* Company name */
-		.company_name{
-			float: left;
-			margin-right: auto;	
-		}
-		.company_name h1,p{
-			padding: 0;
-			margin: 0;
-		}
-	/* Company name */
-
-
-	/* NavBar */
-	.nav_bar{
-		display: none;
-	}
-		.nav ul{
-			display: table;
-			padding: 0;
-			margin: 0;
-			height: 100%;
-			float: right;
-		}
-		.nav ul li{
-			display: table-cell;
-			padding: 0 20px;
-			vertical-align: middle;
-		}
-		.nav ul li a{
-			color: #1a1a1a;
-		}
-	/* NavBar */
-
-
-/* HEADER */
-.template{
-	/* background: white; */
-	width: 90%;
-	background-color: white;
-	padding: 20px;
-	margin: 50px auto 50px auto;
-	border: solid 0.5px rgba(165, 163, 163, 0.322);
-	border-radius: 3px;
+.Intro{
+    padding: auto;
+    vertical-align: middle;
+}
+.social_media {
+  position: fixed;
+  top: 50%;
+  background-color: white;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
-.banner_home{
-	background-image: url(../images/hotel_lobby.jpg);
-	width: 100%;
-	padding: 220px 0px;
-	margin-top: 0;
-	color: white;
-	text-align: center;
-	vertical-align: bottom;
-}
-.banner_home h1{
-	display: inline;
-	margin: 0 auto;
-	font-size: 25px;
-	color: white;
-}
-.content{
-	font-size: 20px;
-	margin: 20px 0;
-}
-span{
-	font-weight: bolder;
-}
-.flex{
-	display: flex;
-	justify-content: space-around;
-	/* padding: 0; */
-}
-.feature{
-	width: 25%;
-}
-.feature h2{
-	padding: 10px;
-}
-.clear{
-	clear: both;
+.social_media a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
 }
 
-.info{
-	display: flex;
-	justify-content: space-between;
-	padding: 40px;
+.social_media a:hover {
+  background-color: white;
+  color: black;
 }
-.address p, li{
-	font-size: 20px ;
+.fab{
+    font-size: 30px;
 }
-
-.align{
-	text-align: center;
+.github{
+    background: #211F1F;
+    color: white;
 }
-
-.banner_contact{
-	background-image: url("../images/contact.jpeg");
-	width: 100%;
-	padding: 220px 0px;
-	margin-top: 0;
-	color: white;
-	text-align: center;
-	background-size: cover;
+.instagram{
+    background-color: #C13584;
+    color: white;
 }
 
-.banner_contact h1{
-	top: 10px;
-	display: inline;
-	margin: 0 auto;
-	font-size: 25px;
-	color: white;
+.twitter {
+  background: #55ACEE;
+  color: white;
 }
 
-.highlight{
-	color: #006faa;
+.google {
+  background: #dd4b39;
+  color: white;
 }
 
-.modules{
-	display: flex;
-	justify-content: space-around;
+.linkedin {
+  background: #007bb5;
+  color: white;
 }
 
-.module{
-	color: #1a1a1a;
-}
-.info{
-	display: flex;
-	justify-content: space-around;
+.youtube {
+  background: #bb0000;
+  color: white;
 }
 
-.link{
-	color: #1a1a1a;
-}
 
-.contact{
-	font-size: 22px;
-	background-color: #006faa;
-	color: white;
-	padding: 10px;
+
+@media screen and (min-width: 576px){
+    
 }
