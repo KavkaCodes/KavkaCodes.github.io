@@ -241,9 +241,9 @@ header{
   display: flex;
   justify-content: center;
 }
-.container{
+/* .container{ */
   /* margin-top: 100px; */
-}
+/* } */
 .AboutMe{
   width: 75%;
   /* height: 300px; */
