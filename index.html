@@ -1,53 +1,218 @@
-<!DOCTYPE html>
+<!-- TODO 
+        1.ToolTip
+        2.Content writing
+        3.Contact form funcionality
+        4.Go to top button
+        5.Random Facts
+        6.Responsive
+    -->
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sumedh</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" type="image/jpg" href="./images/Favicon.png" />
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/full-page-scroll.css">
     <script src="https://kit.fontawesome.com/575f3e9eb0.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <div class="revolvinglogo" id="solutions">
-        </div>
-        <div class="revolvinglogo" id="flockT"></div>
-        <div class="revolvinglogo">
+     <div class="cursor"> </div>
+     <!-- <div class="cursortrail"></div> -->
+    <div id="main" class="scroll-container">
+        <section class="section1">
+            <header>
+                <div class="revolvinglogo tooltipbottom tooltip hover" id="solutions"><span class="tooltiptextbottom tooltiptext">solutions-is</span>
+                </div>
+                <div class="revolvinglogo tooltipbottom tooltip hover" > <span class="tooltiptextbottom tooltiptext">solutions-is</span></div>
+                <div class="revolvinglogo tooltipbottom tooltip hover" id="flockT"> <span class="tooltiptextbottom tooltiptext">Flock Together</span></div>
+                <div class="revolvinglogo tooltipbottom tooltip hover"><span class="tooltiptextbottom tooltiptext">solutions-is</span></div>
+                <a href="#1" class="  tooltipbottom tooltip hover">
+                   
+                    <div class="ProfilePicture">
+                        <span class="tooltiptextbottom tooltiptext">Blog Coming Soon...</span>
+                    </div>
+                </a>
+            </header>
+            <div class="Intro">
+                <h1 class="Name">Sumedh Udar 👨🏽‍💻</h1>
+                <div class="Info">
+                    <p class="slidingVertical">
+                        I can help you create
+                        <span class="rotatingText-adjective">Websites.</span>
+                        <span class="rotatingText-adjective">Mobile apps.</span>
+                        <span class="rotatingText-adjective">Desktop Applications.</span>
+                    </p>
+                </div>
             
-        </div>
-        <div class="revolvinglogo"><a href="#"></a></div>
-        <a href="sumedh.html">
-            <div class="ProfilePicture">
             </div>
-        </a>
-        
-    </header>
-    <div class="Intro">
-        <h1 class="Name">Sumedh Udar 👨🏽‍💻</h1>
-        <div class="Info">
-            <p class="slidingVertical">
-                I can help you create 
-                <span class="rotatingText-adjective">Websites.</span>
-                <span class="rotatingText-adjective">Mobile apps.</span>
-                <span class="rotatingText-adjective">Desktop Applications.</span>
-            </p>
-        </div>
-        
+            
+            <!-- <a href="#2" class="Footer">Check out my projects!!</a> -->
+        </section>
+        <section class="section2">
+            <div class="Intro About">
+                <h1 class="Name">About Me</h1>
+            </div>
+            <div class="Aboutdesc">
+                <p class="description">An engineering student with an obsession with clean design and code. My goal is to provide you with SIMPLE, ARTISTIC and WELL THOUGHT solutions for your technical needs. Check out my projects and skills for more information .</p>
+                <p class="Book"> <span class="current infoHead">test</span> <span class="bookname infoFact">thsi</span> <span class="moreInfo"></span> </p>
+            </div>
+        </section>
+        <section class="section3">
+            <div class="board">
+                <div class="projects">
+                    <div class="solutionsProj">
+                        <button class="proj collapsible tooltipright tooltip tooltipadvance hover">SolPos <span class="tooltiptextright tooltiptext">01/12/20</span></button>
+                        <div class="content">
+                            <p class="test">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus aliquam quaerat illo pariatur, maiores cumque excepturi suscipit voluptatibus corporis sunt quam ut impedit autem aut, blanditiis vero id amet voluptatem. Commodi quisquam excepturi iusto sequi, unde culpa ut quod esse delectus. Earum distinctio voluptates delectus quibusdam voluptatum aliquid vero vel.</p>
+                        </div>
+                        <button class="proj collapsible  tooltipright tooltip  tooltipadvance  hover">QRKOT <span class="tooltiptextright tooltiptext">Twitter</span></button>
+                        <div class="content">
+                            <p class="test">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus aliquam quaerat illo pariatur,
+                                maiores cumque excepturi suscipit voluptatibus corporis sunt quam ut impedit autem aut, blanditiis vero id amet
+                                voluptatem. Commodi quisquam excepturi iusto sequi, unde culpa ut quod esse delectus. Earum distinctio
+                                voluptates delectus quibusdam voluptatum aliquid vero vel.</p>
+                        </div>
+                        <button class="proj collapsible tooltipright tooltip  tooltipadvance  hover">solutions-is.com <span class="tooltiptextright tooltiptext">Twitter</span></button>
+                        <div class="content">
+                            <p class="test">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus aliquam quaerat illo pariatur,
+                                maiores cumque excepturi suscipit voluptatibus corporis sunt quam ut impedit autem aut, blanditiis vero id amet
+                                voluptatem. Commodi quisquam excepturi iusto sequi, unde culpa ut quod esse delectus. Earum distinctio
+                                voluptates delectus quibusdam voluptatum aliquid vero vel.</p>
+                        </div>
+                        
+                    </div>
+                    <div class="personalProj">
+                        <button class="proj collapsible tooltipleft tooltip tooltipadvance  hover">Flock Together <span class="tooltiptextleft tooltiptext">Twitter</span></button>
+                        <div class="content">
+                            <p class="test">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus aliquam quaerat illo pariatur,
+                                maiores cumque excepturi suscipit voluptatibus corporis sunt quam ut impedit autem aut, blanditiis vero id amet
+                                voluptatem. Commodi quisquam excepturi iusto sequi, unde culpa ut quod esse delectus. Earum distinctio
+                                voluptates delectus quibusdam voluptatum aliquid vero vel.</p>
+                        </div>
+                        <button class="proj collapsible tooltipleft tooltip  tooltipadvance  hover">- -<span class="tooltiptextleft tooltiptext">Twitter</span></button>
+                        <div class="content">
+                            <p class="test">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus aliquam quaerat illo pariatur,
+                                maiores cumque excepturi suscipit voluptatibus corporis sunt quam ut impedit autem aut, blanditiis vero id amet
+                                voluptatem. Commodi quisquam excepturi iusto sequi, unde culpa ut quod esse delectus. Earum distinctio
+                                voluptates delectus quibusdam voluptatum aliquid vero vel.</p>
+                        </div>
+                        <button class="proj collapsible tooltipleft tooltip tooltipadvance  hover">- -<span class="tooltiptextleft tooltiptext">Twitter</span></button>
+                        <div class="content">
+                            <p class="test">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus aliquam quaerat illo pariatur,
+                                maiores cumque excepturi suscipit voluptatibus corporis sunt quam ut impedit autem aut, blanditiis vero id amet
+                                voluptatem. Commodi quisquam excepturi iusto sequi, unde culpa ut quod esse delectus. Earum distinctio
+                                voluptates delectus quibusdam voluptatum aliquid vero vel.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section4">
+            <div class="Intro Skillset">
+                <h1 class="Name">Skills & Hobbies</h1>
+            </div>
+            <div class="board">
+                <div class="stack">
+                    <div class="skills cards">
+                        <h3>Languages & Frameworks</h3>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>PHP</li>
+                            <li>SQL</li>
+                            <li>Flutter</li>
+
+                        </ul>
+                    </div>
+                    <div class="softskills cards">
+                        <h3>Tools</h3>
+                        <ul>
+                            <li>Git</li>
+                            <li>Postman</li>
+                            <li>VS Code</li>
+                            <li>Figma</li>
+                        </ul>
+                    </div>
+                    <div class="hobbies cards">
+                        <h3>Hobbies</h3>
+                        <ul>
+                            <li>Playing MC</li>
+                            <li>Reading</li>
+                            <li>Motorcycling</li>
+                            <li>Chess</li>
+                        </ul>
+                        <p class="lichess"> Add me on Lichess: <a href="https://lichess.org/@/sumedh1234" class="lichess link">sumedh1234</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section5">
+            <div class="Intro Contact">
+                <h1 class="Name ContactTitle">Contact Me</h1>
+            </div>
+            <div class="contactform">
+                <div class="Mobile">
+                    <span class="material-icons-outlined">
+                        smartphone
+                    </span>
+                    <span class="mobileinfo">+91-9974577908</span>
+                </div>
+                <div class="Mobile">
+                    <span class="material-icons-outlined">
+                        email
+                    </span>
+                    <span class="mobileinfo">sumedh.udar2000@gmail.com</span>
+                </div>
+                <form id="form" class="topBefore">
+                    <input id="name" type="text" placeholder="Name">
+                    <input id="email" type="text" placeholder="Email">
+                    <textarea id="message" type="text" placeholder="Message"></textarea>
+                    <input id="submit" type="submit" value="GO!">
+                </form>
+            </div>
+        </section>
     </div>
-
-        <a href="#" class="Footer">Check out my projects!!</a>     
-
-    <div class="social_media">
-        <a href="https://github.com/SumedhUDAR" class="github"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/sumedhudar/" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
-        <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+    <Footer class="Footer">
+        <div class="footerinner">
+            <a href="#2">
+                <div class="myproects surf hover">Check Out My Projects!!</div>
+            </a>
+            <a href="#3">
+                <div class="myskills surf hover">Skillset!</div>
+            </a>
+            <a href="#4" >
+                <div class="contactpage surf hover">Contact Me</div>
+            </a>
+            <a href="./images/FT1.png" download class="tooltiptop tooltip tooltipadvance">
+                <div class="download surf  hover">Résumé <span class="tooltiptexttop tooltiptext">Download my CV</span></div>
+            </a>
+        </div>
+    </Footer>
+    <div class="social_media hover">
+        <a href="https://github.com/SumedhUDAR" target="_blank" rel="noopener noreferrer" class=" tooltipright tooltip github"><i class="fab fa-github"></i> <span class="tooltiptextright tooltiptext">Github</span></a>
+        <a href="https://www.linkedin.com/in/sumedhudar/" target="_blank" rel="noopener noreferrer" class="tooltipright tooltip linkedin"><i class="fab fa-linkedin-in"></i> <span class="tooltiptextright tooltiptext">Linkedin</span></a>
+        <a href="#" target="_blank" rel="noopener noreferrer" class="tooltipright tooltip instagram"><i class="fab fa-instagram"></i> <span class="tooltiptextright tooltiptext">Instagram</span> </a>
+        <a href="#" target="_blank" rel="noopener noreferrer" class="tooltipright tooltip twitter"><i class="fab fa-twitter"></i> <span class="tooltiptextright tooltiptext">Twitter</span></a>
         <a href="#" class="google"><i class="fab fa-google"></i></a>
     
         <!-- <a href="#" class="youtube"><i class="fab fa-youtube"></i></a> -->
     </div>
 </body>
-<script src="./js/event.js"></script>
+<script src="./js/app.js"></script>
+<script src="js/full-page-scroll.js"></script>
+<script type="text/javascript">
+    new fullScroll({
+        mainElement: "main",
+        displayDots: true,
+        dotsPosition: "left",
+        animateTime: 0.7,
+        animateFunction: "ease",
+    });
+</script>
 </html>

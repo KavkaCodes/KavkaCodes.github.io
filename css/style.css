@@ -1,7 +1,56 @@
 *{
   text-decoration: none;
+  font-size: 100px;
+  cursor: none;
+}
+.cursor{
+  width: 0.3rem;
+  height: 0.3rem;
+  z-index: 2;
+  background: transparent;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  /* opacity: 25%; */
+  border: 2px solid #2D2D2D;
+  border-radius: 50%;
+   /* transition-duration: 200ms; */
+  /* transition-timing-function: ease-out; */
 
 }
+
+.growcursor{
+  backdrop-filter: grayscale();
+  /* background-color: #2d2d2d5f; */
+  /* transform: scale(1.5); */
+  /* transform-origin: 100% 100%; */
+  /* transition: all 0.1s; */
+}
+
+
+.cursortrail{
+  width: 0.1rem;
+  height: 0.1rem;
+  background-color: #2d2d2d;
+  border-radius: 50%;
+  position: absolute;
+  pointer-events: none;
+  z-index: 2;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+  animation: cursorAnim .5s infinite alternate;
+  /* transition: all 0.0001s linear; */
+}
+
+@keyframes cursorAnim {
+    from {
+        transform: scale(1.5);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
 body{
   height: 100%;
   margin: 0;
@@ -9,6 +58,8 @@ body{
   color: #2D2D2D;
   background-color: #fffc31;
   font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  cursor: none;
 }
 header{
   height: 300px;
@@ -20,7 +71,7 @@ header{
 .ProfilePicture{
   width: 200px;
   height: 200px;
-  border: 5px solid #fffc31;
+  
   border-radius: 50%;
   background-color: #ffffff;
   background-image: url("../images/sumedh.JPG");
@@ -29,7 +80,10 @@ header{
   transition: all 0.5s;
 }
 .ProfilePicture:hover{
-  border: 5px solid #2D2D2D;
+  /* border: 1px solid #2D2D2D; */
+  background-image: url("../images/Profile\ Picture.png");
+  background-size: 200px 200px;
+  box-shadow: 5px 10px 14px #2d2d2d;
   transform: scale(1.2) rotate(10deg);
 }
 .Intro{
@@ -38,13 +92,12 @@ header{
 }
 .Name{
   font-family: 'Bangers', sans-serif;  
-  font-size: 70px;
+  font-size: 0.7rem;
   margin: 0;
-  /* vertical-align: middle; */
 }
 
 .IntroText{
-  font-size: 40px;
+  font-size: 0.4rem;
   margin-left: 50px;
   display:inline;zoom:1;
   vertical-align: top;
@@ -55,8 +108,8 @@ header{
 
 
 
-.Footer{
-  position: fixed;
+/* .Footer{
+  position: absolute;
   right: 0;
   bottom: 0;
   padding: 10px;
@@ -66,8 +119,76 @@ header{
   color: #fffc31;
   margin-right: 40px;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 20px;
+  font-size: 0.2rem;
   text-decoration: underline;
+} */
+.Footer{
+  width: 100%;
+  height: 60px;
+  background: transparent;
+  color: #fffc31;
+  position: fixed;
+  bottom: 0;
+  /* vertical-align: bottom; */
+  /* margin: 0 20px; */
+}
+.footerinner{
+  max-width: 100%;
+  padding: 0px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.surf{
+  margin: 12.5px 10px 0 10px;;
+  padding: 5px 10px;
+  height: 30px;
+  border: 2px solid #2d2d2d;
+  border-radius: 10px;
+  background-color: #2d2d2d;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 0.2rem;
+  text-decoration: underline;
+}
+.Footer a{
+  color: #fffc31;
+}
+.download{
+  padding: 2.5px 10px;
+}
+.Aboutdesc{
+  width: 100%;
+  
+}
+.Aboutdesc p{
+  background-color: #fffc31;
+  border: 3px solid #2d2d2d;
+  /* border-radius: 15px; */
+  box-shadow: 13px 10px 1px #2d2d2d;
+
+  margin: 50px 100px;
+
+  font-size: 0.3rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.description{
+  padding: 20px 80px;
+}
+
+.Book{
+  padding: 5px 80px;
+}
+.infoHead{
+  font-size: 0.3rem;
+  /* color: #0EAD69; */
+  font-style: oblique;
+}
+.infoFact{
+  font-size: 0.3rem;
+  color: #F68E5F;
+  font-style: italic;
+}
+.moreInfo{
+  font-size: 0.3rem;
 }
 /* Social Media */
 .social_media {
@@ -233,31 +354,428 @@ header{
 	80% { opacity: 0; }
 	100% { opacity: 0; }
 }
-/* sumedh.html */
-.sumedh{
-  font-family: 'Bangers', sans-serif;
-  font-size: 70px;
-  color: #2D2D2D;
-  display: flex;
-  justify-content: center;
-}
-/* .container{ */
-  /* margin-top: 100px; */
-/* } */
-.AboutMe{
-  width: 75%;
-  /* height: 300px; */
-  background-color: white;
-  border-radius: 15px;
-  margin: 0 auto;
-}
-.AboutMe p{
-  font-family: 'Open Sans', sans-serif;
-  margin: 30px;
-  font-size: 30px;
-  font-weight: 100;
+.Contact{
+  height: 100px;
+  margin-top: 35px;
+  margin-bottom: 40px;
 }
 
-@media screen and (min-width: 576px){
+
+.Mobile{
+  display: flex;
+  justify-content: flex-start;
+  width: 700px;
+  margin: 0 auto 10px auto;
+}
+.mobileinfo{
+  margin-left: 10px ;
+  font-size: 0.18rem;
+}
+#form {
+  position: relative;
+  width: 700px;
+  /* height: 300px; */
+  margin: 5px auto 100px auto;
+  font-size: 0.1rem;
+  /* border-radius: 15px; */
+  box-shadow: 13px 10px 1px #2d2d2d;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #2d2d2d;
+}
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+  color: #2d2d2d;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #2d2d2d;
+}
+
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+  color: #2d2d2d;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #2d2d2d;
+}
+
+input:focus::placeholder, textarea:focus:placeholder {
+  color: #2d2d2d;
+}
+
+input::-ms-placeholder, textarea::-ms-placeholder {
+  color: #2d2d2d;
+}
+
+input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
+  color: #2d2d2d;
+}
+
+/* on hover placeholder */
+
+input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
+  color: #fffc31;
+}
+
+input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
+  color: #fffc31;
+}
+
+input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
+  color: #fffc31;
+}
+
+input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
+  color: #fffc31;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: #fffc31;
+}
+
+input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+  color: #fffc31;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: #fffc31;
+}
+
+input:hover:focus::-ms-placeholder, textarea:hover:focus:-ms-placeholder {
+  color: #fffc31;
+}
+input:-webkit-autofill{
+  box-shadow: 0 0 0px 1000px #fffc31 inset;
+  color: #2D2D2D;
+}
+input:-webkit-autofill:hover{
+  box-shadow: 0 0 0px 1000px #2d2d2d inset;
+  -webkit-text-fill-color: #fffc31; 
+} 
+input {
+  width: 669px;
+  padding: 0px 15px 0px 15px;
+  background: transparent;
+  outline: none;
+  color: #2d2d2d;
+  font-size: 0.3rem;
+  font-family: inherit;
+  
+  border: solid 1px #2d2d2d;
+  border-bottom: none;
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+input:hover {
+  color: #fffc31;
+  background-color: #2d2d2d;
+}
+textarea {
+  width: 670px;
+  height: 125px;
+  max-height: 110px;
+  padding: 0px 15px 0px 15px;
+  resize: none;
+  
+  background: transparent;
+  outline: none;
+  
+  font-size: 0.3rem;
+  color: #2d2d2d;
+  font-family: inherit;
+  
+  border: solid 1px #2d2d2d;
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+textarea:hover {
+  color: #fffc31;
+  background-color: #2d2d2d;
+}
+
+#submit {
+  width: 702px;
+  
+  padding: 0;
+  margin: -5px 0px 0px 0px;
+  
+  color: #2d2d2d;
+  font-size: 0.3rem;
+  font-family: inherit;
+  
+  outline:none;
+  /* cursor: pointer; */
+  
+  border: solid 1px #2d2d2d;
+  border-top: none;
+}
+
+#submit:hover {
+  color: #fffc31;
+  background-color: #2d2d2d;
+}
+
+.About{
+  margin: 50px 500px 0px 500px;
+
+}
+
+
+.board{
+  width: 100%;
+}
+.stack{
+  display: flex;
+  justify-content: space-between;
+
+  padding: 40px 180px;
+}
+.cards{
+  width: 250px;
+  height: 350px;
+
+  background-color: #fffc31;
+  border: 3px solid #2d2d2d;
+  /* border-radius: 15px; */
+  box-shadow: 13px 10px 1px #2d2d2d;
+
+  
+}
+
+.cards h3{
+  font-size: 0.25rem;
+  font-family: 'Open Sans', sans-serif;
+  /* margin: 10px 20px; */
+  text-align: center;
+  /* padding: 0 40px; */
+}
+.cards ul{
+  margin: 0;
+  padding: 0; 
+  /* height: 100px; */
+  /* text-align: center; */
+}
+.cards li{
+  font-size: 0.23rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0 70px;
+}
+.lichess{
+
+  text-align: center;
+  font-size: 0.15rem;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0 20px 0 20px;
+  padding: 10px 6px;
+  background-color: #2D2D2D;
+  border-radius: 10px;
+  color: #fffc31;
+  /* display: inline-block; */
+}
+.link{
+  padding: 0;
+  margin: 0;
+}
+@media screen and (max-width: 576px){
+    header{
+      justify-content: center;
+      padding: 0;
+    }
+    @keyframes revolve{
+      0%{opacity: 0;}
+      10%{opacity: 0;}
+      100% { opacity: 0;}
+    }
     
+    /* .Intro{
+      width: 70%;
+    } */
+    .Info p{
+      font-size: 0.2rem;
+    }
+    .Name{
+      font-size: 0.38rem;
+      padding: 0 50px;
+    }
+    .social_media a{
+      padding: 0.2rem;
+     }
+    .fab{
+      font-size: 0.25rem;      
+    } 
+    .footerinner{
+      padding: 0px;
+    }
+    .surf{
+      height: 25px;
+      font-size: 0.15rem;
+    }
+}
+
+
+/* TOOLTIP text */
+.tooltipadvance {
+  position: relative;
+
+  /* display: inline-block; */
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #2d2d2d;
+  color: #fffc31;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    font-size: 0.15rem;
+}
+
+
+.tooltiptop .tooltiptexttop {
+  width: 120px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltiptop .tooltiptexttop::after {
+  content: " ";
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #2d2d2d transparent transparent transparent;
+}
+
+
+.tooltipbottom .tooltiptextbottom {
+  width: 120px;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltipbottom .tooltiptextbottom::after {
+   content: " ";
+  position: absolute;
+  bottom: 100%;  /* At the top of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #2d2d2d transparent;
+}
+
+.tooltipleft .tooltiptextleft {
+  /* top: -5px; */
+  right: 105%;
+}
+
+.tooltipleft .tooltiptextleft::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 100%; /* To the right of the tooltip */
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent #2d2d2d;
+}
+
+
+
+.tooltipright .tooltiptextright {
+  /* top: -5px; */
+  left: 105%;
+}
+.tooltipright .tooltiptextright::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  right: 100%; /* To the left of the tooltip */
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent #2d2d2d transparent transparent;
+}
+/* Show the tooltip text when you mouse over the tooltip container */
+
+
+
+
+
+
+
+.projects{
+  padding: 40px 150px;
+}
+.solutionsProj, .personalProj{
+
+  width: 50%;
+  height: 380px;
+
+  /* background-color: #006faa; */
+
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* padding: 30px 0px; */
+}
+
+.proj{
+  
+  height: 50px;
+  margin:  0 120px;
+
+  background-color: #2d2d2d;
+
+  /* border-radius: 15px; */
+  box-shadow: 5px 10px 14px #2d2d2d;
+}
+
+.collapsible {
+  background-color: #2D2D2D;
+  color: #fffc31;
+  /* cursor: pointer; */
+  border: 3px solid #2d2d2d;
+  outline: none;
+  text-decoration: underline;
+  font-size: 0.2rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #fffc31;
+  color: #2d2d2d;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.test{
+  font-size: 0.1rem;
 }
