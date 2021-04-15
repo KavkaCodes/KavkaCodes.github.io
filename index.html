@@ -1,10 +1,11 @@
-<!-- TODO 
-        1.ToolTip
-        2.Content writing
+<!-- TODO
+        6.Responsive 
+        2.Content writing (projects)
         3.Contact form funcionality
         4.Go to top button
         5.Random Facts
-        6.Responsive
+        
+        7.Themes: { #55d6c2; f6f5ea}
     -->
     <!DOCTYPE html>
 <html lang="en">
@@ -16,6 +17,7 @@
     <link rel="shortcut icon" type="image/jpg" href="./images/Favicon.png" />
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/full-page-scroll.css">
     <script src="https://kit.fontawesome.com/575f3e9eb0.js" crossorigin="anonymous"></script>
@@ -26,11 +28,18 @@
     <div id="main" class="scroll-container">
         <section class="section1">
             <header>
-                <div class="revolvinglogo tooltipbottom tooltip hover" id="solutions"><span class="tooltiptextbottom tooltiptext">solutions-is</span>
+                <a href="http://solutions-is.com" target="_blank" rel="noopener noreferrer" class="revolvinglogo tooltipbottom tooltip hover">
+                    <div class="" id="solutions">
+                        <span class="tooltiptextbottom tooltiptext">solutions-is</span>
+                    </div>
+                </a>
+                <div class="revolvinglogo tooltipbottom tooltip hover"> 
+                    <span class="tooltiptextbottom tooltiptext">---</span>
                 </div>
-                <div class="revolvinglogo tooltipbottom tooltip hover" > <span class="tooltiptextbottom tooltiptext">solutions-is</span></div>
-                <div class="revolvinglogo tooltipbottom tooltip hover" id="flockT"> <span class="tooltiptextbottom tooltiptext">Flock Together</span></div>
-                <div class="revolvinglogo tooltipbottom tooltip hover"><span class="tooltiptextbottom tooltiptext">solutions-is</span></div>
+                <div class="revolvinglogo tooltipbottom tooltip hover" id="flockT"> 
+                    <span class="tooltiptextbottom tooltiptext">Flock Together</span>
+                </div>
+                <div class="revolvinglogo tooltipbottom tooltip hover"><span class="tooltiptextbottom tooltiptext">---</span></div>
                 <a href="#1" class="  tooltipbottom tooltip hover">
                    
                     <div class="ProfilePicture">
@@ -39,7 +48,7 @@
                 </a>
             </header>
             <div class="Intro">
-                <h1 class="Name">Sumedh Udar 👨🏽‍💻</h1>
+                <h1 class="sumedh">Sumedh Udar 👨🏽‍💻</h1>
                 <div class="Info">
                     <p class="slidingVertical">
                         I can help you create
@@ -57,12 +66,21 @@
             <div class="Intro About">
                 <h1 class="Name">About Me</h1>
             </div>
+            <div class="ContainerAbout">
+                <div class="description BlockAbout">
+                    <p class="ParaAbout">An engineering student with an obsession with clean design and code. My goal is to provide you with SIMPLE, ARTISTIC and WELL THOUGHT solutions for your technical needs. Check out my projects and skills for more information.</p>
+                </div>
+                <div class="splashtext BlockAbout"> <p class="SplashAbout"><span class="current infoHead">test</span> <span class="bookname infoFact">thsi</span> <span class="moreInfo"></span></p> </div>
+            </div>
             <div class="Aboutdesc">
-                <p class="description">An engineering student with an obsession with clean design and code. My goal is to provide you with SIMPLE, ARTISTIC and WELL THOUGHT solutions for your technical needs. Check out my projects and skills for more information .</p>
-                <p class="Book"> <span class="current infoHead">test</span> <span class="bookname infoFact">thsi</span> <span class="moreInfo"></span> </p>
+                <p class="description"></p>
+                <p class="Book">  </p>
             </div>
         </section>
         <section class="section3">
+            <div class="Intro About">
+                <h1 class="Name">Projects</h1>
+            </div>
             <div class="board">
                 <div class="projects">
                     <div class="solutionsProj">
@@ -113,23 +131,26 @@
             </div>
         </section>
         <section class="section4">
-            <div class="Intro Skillset">
+            <div class="Intro Skillset About">
                 <h1 class="Name">Skills & Hobbies</h1>
             </div>
             <div class="board">
                 <div class="stack">
-                    <div class="skills cards">
-                        <h3>Languages & Frameworks</h3>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>PHP</li>
-                            <li>SQL</li>
-                            <li>Flutter</li>
-
-                        </ul>
+                    <div class="test_double">
+                        <div class="skills cards">
+                            <h3>Languages & Frameworks</h3>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>PHP</li>
+                                <li>SQL</li>
+                                <li>Flutter</li>
+                        
+                            </ul>
+                        </div>
                     </div>
+                    
                     <div class="softskills cards">
                         <h3>Tools</h3>
                         <ul>
@@ -180,18 +201,24 @@
     </div>
     <Footer class="Footer">
         <div class="footerinner">
-            <a href="#2">
-                <div class="myproects surf hover">Check Out My Projects!!</div>
-            </a>
-            <a href="#3">
-                <div class="myskills surf hover">Skillset!</div>
-            </a>
-            <a href="#4" >
-                <div class="contactpage surf hover">Contact Me</div>
-            </a>
-            <a href="./images/FT1.png" download class="tooltiptop tooltip tooltipadvance">
-                <div class="download surf  hover">Résumé <span class="tooltiptexttop tooltiptext">Download my CV</span></div>
-            </a>
+            <div class="part1">
+                <a href="#2">
+                    <div class="myproects surf hover">Check Out My Projects!!</div>
+                </a>
+                <a href="#3">
+                    <div class="myskills surf hover">Skillset!</div>
+                </a>
+            </div>
+            <div class="part2">
+                <a href="#4">
+                    <div class="contactpage surf hover">Contact Me</div>
+                </a>
+                <a href="./images/FT1.png" download class="tooltiptop tooltip tooltipadvance">
+                    <div class="download surf  hover">Résumé <span class="tooltiptexttop tooltiptext">Download my CV</span></div>
+                </a>
+            </div>
+            
+           
         </div>
     </Footer>
     <div class="social_media hover">

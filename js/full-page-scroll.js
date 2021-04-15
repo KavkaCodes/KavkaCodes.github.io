@@ -90,7 +90,7 @@
 			_self.ul.appendChild(li);
 		}
 
-		this.ul.childNodes[0].firstChild.className = this.updateClass(1, 'active', this.ul.childNodes[0].firstChild.className);
+		this.ul.childNodes[0].firstChild.className = this.updateClass(1, 'test', this.ul.childNodes[0].firstChild.className);
 
 		if (this.defaults.displayDots) {
 			document.body.appendChild(this.ul);
@@ -217,9 +217,9 @@
 			this.defaults.container.style.transition = 'all ' + animateTime + 's ' + animateFunction;
 
 			for (var i = 0; i < this.ul.childNodes.length; i++) {
-					this.ul.childNodes[i].firstChild.className = this.updateClass(2, 'active', this.ul.childNodes[i].firstChild.className);
+					this.ul.childNodes[i].firstChild.className = this.updateClass(2, 'test', this.ul.childNodes[i].firstChild.className);
 					if (i == this.defaults.currentPosition) {
-					this.ul.childNodes[i].firstChild.className = this.updateClass(1, 'active', this.ul.childNodes[i].firstChild.className);
+					this.ul.childNodes[i].firstChild.className = this.updateClass(1, 'test', this.ul.childNodes[i].firstChild.className);
 				}
 			}
 		};
