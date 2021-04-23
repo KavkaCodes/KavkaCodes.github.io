@@ -194,7 +194,7 @@ function themeChanger(themeName) {
     });
 }
 
-var mail = documen.querySelector("#submit");
+var mail = document.querySelector("#submit");
 mail.addEventListener("click", function () {
   var name = document.querySelector("#name").value;
   var email =  document.querySelector("#email").value;
