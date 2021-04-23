@@ -1,30 +1,6 @@
 
 
 
-.growcursor{
-  backdrop-filter: grayscale();
-  /* background-color: #2d2d2d5f; */
-  /* transform: scale(1.5); */
-  /* transform-origin: 100% 100%; */
-  /* transition: all 0.1s; */
-}
-
-
-.cursortrail{
-  width: 25px;
-  height: 25px;
-  background-color: #2d2d2d;
-  border-radius: 50%;
-  position: absolute;
-  pointer-events: none;
-  z-index: 2;
-  transition-duration: 200ms;
-  transition-timing-function: ease-out;
-  animation: cursorAnim .5s infinite alternate;
-  /* transition: all 0.0001s linear; */
-}
-
-
 /* Body */
 *{
   text-decoration: none;
@@ -42,7 +18,15 @@ body{
   background-color: #fffc31;
   font-family: 'Open Sans', sans-serif;
   text-decoration: none;
-  cursor: none;
+  cursor: none;  
+}
+.heading{
+  width: 100%;
+  margin-top: 15px;
+}
+.headingtext{
+  font-size: 7vw;
+  text-align: center;
 }
 /* Cursor */
 .cursor{
@@ -55,11 +39,14 @@ body{
   pointer-events: none;
   border: 2px solid #2D2D2D;
   border-radius: 50%;
+  top: -100px;
+  left: -100px;
 }
 /* Section1 */
     /* Header */
     header{
       height: 40%;
+      width: 100%;
       display: flex;
       justify-content: flex-end;
       align-items: center;
@@ -71,11 +58,12 @@ body{
         height: 200px;
         
         border-radius: 50%;
-        background-color: #ffffff;
+        background-color: #2d2d2d;
         background-image: url("../images/sumedh.JPG");
         background-size: 300px 400px;
         background-position: center;
         transition: all 0.5s;
+        margin-right: 50px;
       }
       .ProfilePicture:hover{
         /* border: 1px solid #2D2D2D; */
@@ -86,17 +74,13 @@ body{
       }
     /* Intro  */
     .Intro{
+      margin-top: 50px;
       width: 100%;
       /* margin: 0 500px auto auto; */
     }
     .sumedh{
       position: relative;
       font-size: 8vw;
-      left: 12%;
-    }
-    .Info{
-      position: relative;
-      left: 13%;
     }
 /* Section2 */
     .ContainerAbout{
@@ -105,7 +89,6 @@ body{
       margin: 7.5% 10% 0 10%;
     }
     .BlockAbout{
-
       background-color: #f6f5ea;
       border: 3px solid #2d2d2d;
       box-shadow: 13px 10px 1px #2d2d2d;
@@ -137,7 +120,64 @@ body{
       font-size: 2.5vw;
     }
 /* Section3 */
+
+.projects{
+  padding: 6.7vw 11.7vw;
+}
+.solutionsProj, .personalProj{
+  width: 50%;
+  height: 50.42vh;
+
+  /* background-color: #006faa; */
+
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* padding: 30px 0px; */
+}
+
+.proj{
+  
+  height: 8.4vh;
+  margin:  0 9.4vw;
+
+  background-color: #2d2d2d;
+
+  /* border-radius: 15px; */
+}
+.test{
+  font-size: 10px;
+}
+.collapsible {
+  background-color: #2D2D2D;
+  color: #fffc31;
+  /* cursor: pointer; */
+  border: 3px solid #2d2d2d;
+  outline: none;
+  text-decoration: underline;
+  font-size: 1.5vw;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #f6f5ea !important; 
+  color: #2d2d2d !important;
+  box-shadow: 5px 10px 1px #2d2d2d;
+  transition: all 0.4s ease;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
 /* Section4 */
+
 /* Section5 */
 /* Footer */
 .Footer{
@@ -145,7 +185,7 @@ body{
   background: transparent;
   color: #fffc31;
   position: fixed;
-  bottom: 0;
+  bottom: 10px;
 }
 .footerinner{
   display: flex;
@@ -227,28 +267,56 @@ body{
   background: #bb0000;
   color: white;
 }
+
+/* Themes */
+.Themes{
+  width: 100%;
+  height: 40px
+}
+.Theme{
+  float: left;
+  box-sizing: border-box;
+  margin: 10px 10px 0 10px;
+  height: 23px;
+  width: 23px;
+  border-radius: 50%;
+  border: 2px hidden #2d2d2d;
+}
+#a{
+  background-color: #fffc31;
+}
+#b{
+  background-color: #55d6c2;
+}
+#c{
+  background-color: #2e3dd9;
+}
+#d{
+  background-color: #ef5b5b;
+}
+#e{
+  background-color: #8c96fe;
+}
 /* Animations */
     /* Revolving Logos */
     .revolvinglogo{
       background-color: white;
-      width: 165px;
-      height: 165px;
+      width: 125px;
+      height: 125px;
       margin-right: 200px;
       opacity: 0;
       border-radius: 50%;
       position: absolute;
-      animation: revolve 8s linear infinite 0s;
-      -ms-animation: revolve 8s linear infinite 0s;
-      -webkit-animation: revolve 8s linear infinite 0s;
-    }
-    .revolvinglogo:hover{
-      transform: scale(1.2) rotate(10deg);
+      animation: revolve 10s linear infinite 0s;
+      -ms-animation: revolve 10s linear infinite 0s;
+      -webkit-animation: revolve 10s linear infinite 0s;      
+      transition: transform 10s;
     }
     .revolvinglogo:nth-child(1){
       background-image: url(../images/Solutions-Blue.png);
       background-color: #006faa;
       background-position: center;
-      background-size: 150px 150px;
+      background-size: 120px 120px;
     }
     .revolvinglogo:nth-child(2){
       /* background-image: url(../images/FT1.png); */
@@ -256,35 +324,39 @@ body{
       background-position: center;
       background-repeat: no-repeat;
       /* background-size: 190px 100px; */
-      animation-delay: 1s;
-      -ms-animation-delay: 5s;
-      -webkit-animation-delay: 2s;
+      animation-delay: 2.5s;
+      -ms-animation-delay: 2.5s;
+      -webkit-animation-delay: 2.5s;
     }
     .revolvinglogo:nth-child(3){
       background-image: url(../images/FT1.png);
       background-color: #42090d;
       background-position: center;
       background-repeat: no-repeat;
-      background-size: 300px 224px;
-      animation-delay: 2s;
-      -ms-animation-delay: 10s;
-      -webkit-animation-delay: 4s;
+      background-size: 250px 168px;
+      animation-delay: 5s;
+      -ms-animation-delay: 5s;
+      -webkit-animation-delay: 5s;
     }
     .revolvinglogo:nth-child(4){
       background-color: #fffc31;
-      animation-delay: 3s;
-      -ms-animation-delay: 10s;
-      -webkit-animation-delay: 6s;
+      animation-delay: 7.5s;
+      -ms-animation-delay: 7.5s;
+      -webkit-animation-delay: 7.5s;
     }
     @keyframes revolve{
       0% { 
         opacity: 0; 
       }
-      10%{
+      6%{
+        opacity: 0;
+      }
+      8%{
         opacity: 1;
       }
+    
       100% { opacity: 1; 
-      transform: translateX(-600%);}
+      transform: translateX(-800%);}
     }
 
     /* Rotating Text */
@@ -292,27 +364,23 @@ body{
       font-family: 'Open Sans', sans-serif;
       font-size: 40px;
       /* font-weight: 800; */
-      margin: 0 0 0 100px ;
+      /* margin: 0 0 0 100px ; */
       /* padding-right: 100px; */
     }
 
     .rotatingText-adjective { 
-      width: 410px;
+      /* width: 410px; */
       font-family: 'Bangers', cursive; 
       font-size: 50px;
       opacity: 0;
       position: absolute;
       /* text-align: center; */
       text-transform: uppercase;
-    }
-
-    .slidingVertical span{
       animation: topToBottom 6s linear infinite 0s;
       -ms-animation: topToBottom 6s linear infinite 0s;
       -webkit-animation: topToBottom 6s linear infinite 0s;
       color: #2D2D2D;
       opacity: 0;
-      overflow: hidden;
       position: absolute;
       margin-left: 10px;
     }
@@ -558,7 +626,7 @@ textarea:hover {
 }
 .cards{
   width: 250px;
-  height: 350px;
+  height: 300px;
 
   background-color: #f6f5ea;
   border: 3px solid #2d2d2d;
@@ -602,15 +670,7 @@ textarea:hover {
   margin: 0;
 }
 @media screen and (max-width: 576px){
-    header{
-      justify-content: center;
-      padding: 0;
-    }
-    @keyframes revolve{
-      0%{opacity: 0;}
-      10%{opacity: 0;}
-      100% { opacity: 0;}
-    }
+
     
     /* .Intro{
       width: 70%;
@@ -735,66 +795,151 @@ textarea:hover {
 }
 /* Show the tooltip text when you mouse over the tooltip container */
 
+/* Media Queries */
+/* Mobile Devices */
+@media screen and (max-width: 767px){
+  .cursor{
+    display: none;
+  }
+  .social_media{
+    top: 30%;
+  }
+  .social_media a{
+    font-size: 30px;
+  }
+  .fab{
+    font-size: 35px;
+  }
+  header{
+      justify-content: center;
+      padding: 0;    
+      margin-top: 30px;
+    }
+    .ProfilePicture{
+      margin: 0;
+    }
+    .rotatingText-adjective{
+      display: block;
+      width: 100%;
+      font-size: 30px;
+      margin-left: 0;
+    }
+    .Info p{
+      margin: 0;
+      text-align: center;
+      font-size: 25px;
+    }
+    .sumedh{
+      font-size: 45px;
+      text-align: center;
+    }
 
+    @keyframes revolve{
+      0%{opacity: 0;}
+      10%{opacity: 0;}
+      100% { opacity: 0;}
+    }
+    .part1 ,.part2{
+      display: block;
+      margin: 0;
+      padding: 0;
+    }
+    .surf{
+      height: 20px;
+      padding: 10px 0;
+    }
+    .surf p{
+      font-size: 15px;
+      text-align: center;
+    }
+    .heading{
+      padding-top: 50px;
+      margin-top: 0;
+    }
+    .headingtext{
+      font-size: 45px;
+    }
+    .ContainerAbout{
+      width: 70%;
 
+      margin: 7.5% 15% 0 15%;
+    }
+    .BlockAbout p, .infoHead{
+      font-size: 20px;
+    }
+    .projects{
+      padding: 0;
 
-
-
-
-.projects{
-  padding: 40px 150px;
+    }
+    .solutionsProj, .personalProj{
+      float: none;
+      justify-content: space-between;
+      width: 100%;
+      height: 200px;
+    }
+    .proj{
+      width: 60%;
+      margin: 0 20%;
+      height: 30px;
+      font-size: 20px;
+    }
+    .board{
+      height: 500px;
+    }
+    .stack{
+      width: 70%;
+      height: 100%;
+      padding: 0;
+      margin: 0 15%;
+    }
+    .cards{
+      margin: 80px 0;
+      height: 340px;
+      position: absolute;
+      animation: roundd 12s linear infinite 0s;
+    }
+    .cards:nth-child(2){
+      animation-delay: 4s;
+    }
+    .cards:nth-child(3){
+      animation-delay: 8s;
+    }
+    @keyframes roundd {
+      0% { opacity: 0; }
+      5% { opacity: 0;  }
+      10% { opacity: 1;  }
+      25% { opacity: 1;  }
+      30% { opacity: 0; }
+      80% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+    .contactform{
+      width: 70%;
+      margin: 10px 15% ;
+      padding-top: 80px;
+    }
+    .Mobile{
+      width: 100%;
+    }
+    #form{
+      margin-top: 50px;
+    }
+    #form, #submit{
+      width: 100%;
+    }
+    #name, #email, #message{
+      width: 88%;
+    }
 }
-.solutionsProj, .personalProj{
+/* Small Devices */
+@media screen and (min-width: 768px){
 
-  width: 50%;
-  height: 300px;
-
-  /* background-color: #006faa; */
-
-  float: left;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  /* padding: 30px 0px; */
 }
-
-.proj{
+/* Medium Devices */
+@media screen and (min-width: 992px){
   
-  height: 50px;
-  margin:  0 120px;
-
-  background-color: #2d2d2d;
-
-  /* border-radius: 15px; */
 }
+/* Large Devices */
+@media screen and (min-width: 1200px){
 
-.collapsible {
-  background-color: #2D2D2D;
-  color: #fffc31;
-  /* cursor: pointer; */
-  border: 3px solid #2d2d2d;
-  outline: none;
-  text-decoration: underline;
-  font-size: 0.2rem;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .collapsible:hover {
-  background-color: #f6f5ea;
-  color: #2d2d2d;
-  box-shadow: 5px 10px 1px #2d2d2d;
-  transition: all 0.3s ease;
-}
-
-/* Style the collapsible content. Note: hidden by default */
-.content {
-  padding: 0 18px;
-  background-color: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-}
-.test{
-  font-size: 0.1rem;
 }
