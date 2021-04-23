@@ -210,6 +210,7 @@ mail.addEventListener("click", function () {
       },
       success: function (res) {
         console.log(res);
+        consolee.log("hello");
       },
     });
 })
